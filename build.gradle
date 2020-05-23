@@ -15,12 +15,14 @@ version = '2.6.0'
 
 repositories {
     maven { url "https://jitpack.io" }
+    maven { url "https://repo.eclipse.org/content/repositories/paho-releases/" }
     mavenCentral()
 }
 
 dependencies {
     implementation("org.slf4j:slf4j-simple:1.7.25")
     implementation("com.github.ev3dev-lang-java:ev3dev-lang-java:2.5.3")
+    implementation("org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.0")
 }
 
 apply from: './config.gradle'
